@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+button {
+  cursor: none;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(34, 211, 238, 0.18),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(59, 130, 246, 0.2),
+      transparent 28%
+    ),
+    linear-gradient(180deg, #020617 0%, #0b0f19 45%, #020617 100%);
+  color: #f9fafb;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.glass {
+  background: rgba(17, 24, 39, 0.55);
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.08);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #3b82f6, #22d3ee);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(34, 211, 238, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
