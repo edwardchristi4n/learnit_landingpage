@@ -13,6 +13,8 @@ import CTASection from "./components/CTASection";
 import WhyLearnit from "./components/WhyLearnit";
 import TechTopics from "./components/TechTopics";
 import RoadmapCard from "./components/RoadmapCard";
+import StartHere from "./components/StartHere";
+import ForBeginners from "./components/ForBeginners";
 
 // Data
 const roadmap = [
@@ -79,7 +81,7 @@ export default function App() {
       {/* Hero Section */}
       <section
         id="home"
-        className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 pt-32 md:pt-40 pb-16 md:pb-24 min-h-screen flex flex-col items-center justify-center"
+        className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 pt-24 md:pt-40 pb-12 md:pb-24 min-h-screen flex flex-col items-center justify-center"
       >
         <div className="text-center mb-8 md:mb-12 w-full">
           <motion.div
@@ -97,9 +99,9 @@ export default function App() {
             className="text-4xl md:text-7xl lg:text-8xl font-black leading-tight md:leading-[0.9]"
             style={{ fontFamily: "League Spartan" }}
           >
-            LEARN IT
+            CODING & TECH
             <br />
-            <span className="text-gradient">THE MODERN WAY</span>
+            <span className="text-gradient">MADE SIMPLE</span>
           </motion.h1>
 
           <p className="mt-4 md:mt-7 max-w-2xl mx-auto text-gray-400 text-sm md:text-lg lg:text-xl px-4 md:px-0">
@@ -107,24 +109,25 @@ export default function App() {
             yang simple, visual, dan mudah dipahami.
           </p>
 
-          <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+          <div className="mt-8 md:mt-12 flex flex-col sm:flex-row gap-2 md:gap-4 justify-center w-full px-2 md:px-0">
             <a
               href="https://instagram.com/learnit.dev"
               target="_blank"
               rel="noreferrer"
-              className="group px-6 md:px-8 py-3 md:py-4 rounded-full bg-cyan-400 text-black font-bold hover:bg-purple-400 hover:text-white hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(34,211,238,0.35)] hover:shadow-[0_0_35px_rgba(168,85,247,0.5)] text-sm md:text-base"
+              className="group px-5 md:px-8 py-3 md:py-4 rounded-full bg-cyan-400 text-black font-bold hover:bg-purple-400 hover:text-white hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(34,211,238,0.35)] hover:shadow-[0_0_35px_rgba(168,85,247,0.5)] text-xs md:text-base"
             >
-              <span className="inline-flex items-center gap-2">
+              <span className="inline-flex items-center gap-1 md:gap-2">
                 <FaInstagram className="group-hover:rotate-12 transition" />
-                Follow Instagram
+                <span className="hidden sm:inline">Follow @learnit.dev</span>
+                <span className="inline sm:hidden">Follow</span>
               </span>
             </a>
 
             <a
-              href="#why"
-              className="px-6 md:px-8 py-3 md:py-4 rounded-full glass font-semibold hover:scale-105 transition text-sm md:text-base"
+              href="#start-here"
+              className="px-5 md:px-8 py-3 md:py-4 rounded-full glass font-semibold hover:scale-105 transition text-xs md:text-base"
             >
-              Learn More
+              See Topics
             </a>
           </div>
         </div>
@@ -166,6 +169,12 @@ export default function App() {
         </div>
       </section>
 
+      {/* Start Here Section */}
+      <StartHere />
+
+      {/* For Beginners Section */}
+      <ForBeginners />
+
       {/* Tech Topics Section */}
       <TechTopics />
 
@@ -180,9 +189,27 @@ export default function App() {
 
       {/* Footer */}
       <footer className="relative z-10 border-t border-cyan-400/10">
-        <div className="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-8 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 text-xs md:text-sm text-gray-500">
-          <p>© 2026 learnit.dev</p>
-          <p>Programming Made Simple.</p>
+        <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4 text-center md:text-left">
+          <div>
+            <h3 className="font-bold text-lg">learnit.dev</h3>
+            <p className="text-gray-400 text-xs md:text-sm mt-1">
+              Programming Made Simple.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center md:items-start gap-2 text-gray-400 text-xs md:text-sm">
+            <p className="text-cyan-300">Follow kami di Instagram</p>
+            <a
+              href="https://instagram.com/learnit.dev"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 hover:text-cyan-300 transition font-semibold"
+            >
+              <FaInstagram /> @learnit.dev
+            </a>
+          </div>
+
+          <p className="text-gray-500 text-xs md:text-sm">© 2026 learnit.dev</p>
         </div>
       </footer>
     </main>

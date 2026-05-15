@@ -62,8 +62,7 @@ export const terminalLines = [
 
 export const navLinks = [
   { label: "Home", href: "#home" },
-  { label: "Roadmap", href: "#roadmap" },
+  { label: "Start Here", href: "#start-here" },
   { label: "Content", href: "#content" },
   { label: "Terminal", href: "#terminal" },
-  { label: "Follow", href: "#follow" },
 ];

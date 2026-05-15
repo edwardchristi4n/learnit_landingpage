@@ -15,7 +15,7 @@ export default function TechTopics() {
   return (
     <section
       id="tech"
-      className="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-32"
+      className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 py-20 md:py-32"
     >
       <div className="text-center mb-12 md:mb-16">
         <motion.p

@@ -6,23 +6,23 @@ export default function GlowCursor() {
 
   return (
     <>
-      {/* Background Glow */}
+      {/* Background Glow - Large subtle blur */}
       <motion.div
-        className="fixed top-0 left-0 w-96 h-96 rounded-full bg-cyan-400/20 pointer-events-none z-0 blur-3xl"
+        className="fixed top-0 left-0 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-cyan-400/15 via-blue-500/10 to-transparent pointer-events-none z-0 blur-[100px]"
         animate={{
-          x: position.x - 192,
-          y: position.y - 192,
+          x: position.x - 300,
+          y: position.y - 300,
         }}
         transition={{
           type: "spring",
-          stiffness: 100,
-          damping: 30,
+          stiffness: 50,
+          damping: 40,
         }}
       />
 
       {/* Cursor Dot */}
       <motion.div
-        className="fixed top-0 left-0 w-4 h-4 rounded-full bg-cyan-300 pointer-events-none z-9999 mix-blend-screen"
+        className="fixed top-0 left-0 w-4 h-4 rounded-full bg-cyan-300 pointer-events-none z-9999 mix-blend-screen shadow-[0_0_15px_rgba(34,211,238,0.6)]"
         animate={{
           x: position.x - 8,
           y: position.y - 8,

@@ -23,7 +23,7 @@ export default function RoadmapCard({ item, index }) {
       </div>
 
       <div
-        className={`w-12 h-12 md:w-13 md:h-13 rounded-2xl ${item.bg} ${item.color} flex items-center justify-center mb-6 md:mb-8 shadow-[0_0_25px_rgba(34,211,238,0.12)]`}
+        className={`w-12 h-12 md:w-14 md:h-14 rounded-2xl ${item.bg} ${item.color} flex items-center justify-center mb-6 md:mb-8 shadow-[0_0_25px_rgba(34,211,238,0.12)]`}
       >
         {item.icon}
       </div>

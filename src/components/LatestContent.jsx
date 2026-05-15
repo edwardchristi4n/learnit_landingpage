@@ -6,7 +6,7 @@ export default function LatestContent() {
   return (
     <section
       id="content"
-      className="relative z-10 max-w-6xl mx-auto px-6 py-24"
+      className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 py-24"
     >
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
         <div>
@@ -15,13 +15,14 @@ export default function LatestContent() {
             className="text-4xl md:text-6xl font-black mt-3"
             style={{ fontFamily: "League Spartan" }}
           >
-            New posts are coming.
+            Content Preview
           </h2>
         </div>
 
         <p className="text-gray-400 max-w-md">
-          Konten singkat seputar coding, AI, web development, dan dunia IT untuk
-          pemula.
+          Preview konten singkat yang kami bagikan. Ikuti Instagram @learnit.dev
+          untuk update terbaru seputar coding, AI, web development, dan tech
+          tips.
         </p>
       </div>
 
